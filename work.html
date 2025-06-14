@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work - Satya Pandey</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        accent: '#facc15',
+                    },
+                    fontFamily: {
+                        sans: ['Open Sans', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Open Sans', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-black text-white">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-black/90 backdrop-blur-sm z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <a href="/" class="text-2xl font-bold text-white">Satya Pandey</a>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="/" class="text-white hover:text-accent transition">Home</a>
+                    <a href="/about.html" class="text-white hover:text-accent transition">About</a>
+                    <a href="/work.html" class="text-accent">Work</a>
+                    <a href="/gallery.html" class="text-white hover:text-accent transition">Gallery</a>
+                    <a href="/showreel.html" class="text-white hover:text-accent transition">Showreel</a>
+                    <a href="/press.html" class="text-white hover:text-accent transition">Press</a>
+                    <a href="/contact.html" class="text-white hover:text-accent transition">Contact</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden text-white" id="mobile-menu-button">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div class="md:hidden hidden" id="mobile-menu">
+                <div class="px-2 pt-2 pb-3 space-y-1">
+                    <a href="/" class="block text-white hover:text-accent transition py-2">Home</a>
+                    <a href="/about.html" class="block text-white hover:text-accent transition py-2">About</a>
+                    <a href="/work.html" class="block text-accent py-2">Work</a>
+                    <a href="/gallery.html" class="block text-white hover:text-accent transition py-2">Gallery</a>
+                    <a href="/showreel.html" class="block text-white hover:text-accent transition py-2">Showreel</a>
+                    <a href="/press.html" class="block text-white hover:text-accent transition py-2">Press</a>
+                    <a href="/contact.html" class="block text-white hover:text-accent transition py-2">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Work Header -->
+    <section class="pt-32 pb-20 px-4">
+        <div class="container mx-auto max-w-6xl">
+            <h1 class="text-4xl md:text-5xl font-bold mb-8">My Work</h1>
+            <p class="text-lg text-gray-400 max-w-3xl">
+                A collection of my performances across film, television, theater, and commercial work. Each project represents a unique journey and opportunity to bring characters to life.
+            </p>
+        </div>
+    </section>
+
+    <!-- Category Filters -->
+    <section class="pb-12 px-4">
+        <div class="container mx-auto max-w-6xl">
+            <div class="flex flex-wrap gap-4 justify-center">
+                <button class="px-6 py-2 rounded-full bg-accent text-black font-semibold">All</button>
+                <button class="px-6 py-2 rounded-full bg-gray-800 hover:bg-gray-700 transition">Film</button>
+                <button class="px-6 py-2 rounded-full bg-gray-800 hover:bg-gray-700 transition">TV</button>
+                <button class="px-6 py-2 rounded-full bg-gray-800 hover:bg-gray-700 transition">Theater</button>
+                <button class="px-6 py-2 rounded-full bg-gray-800 hover:bg-gray-700 transition">Ads</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Grid -->
+    <section class="pb-20 px-4">
+        <div class="container mx-auto max-w-6xl">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Work Item 1 -->
+                <div class="group">
+                    <div class="relative overflow-hidden rounded-lg mb-4">
+                        <img src="/images/work1.jpg" alt="The Dream Project" class="w-full h-96 object-cover transform group-hover:scale-105 transition duration-300">
+                        <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                            <a href="#" class="bg-accent text-black px-6 py-2 rounded-full font-semibold hover:bg-accent/90 transition">Watch Trailer</a>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Lead Role</h3>
+                    <p class="text-gray-400">The Dream Project (2024)</p>
+                    <p class="text-sm text-gray-500 mt-2">Feature Film</p>
+                </div>
+
+                <!-- Work Item 2 -->
+                <div class="group">
+                    <div class="relative overflow-hidden rounded-lg mb-4">
+                        <img src="/images/work2.jpg" alt="City Lights" class="w-full h-96 object-cover transform group-hover:scale-105 transition duration-300">
+                        <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                            <a href="#" class="bg-accent text-black px-6 py-2 rounded-full font-semibold hover:bg-accent/90 transition">Watch Trailer</a>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Supporting Role</h3>
+                    <p class="text-gray-400">City Lights (2023)</p>
+                    <p class="text-sm text-gray-500 mt-2">TV Series</p>
+                </div>
+
+                <!-- Work Item 3 -->
+                <div class="group">
+                    <div class="relative overflow-hidden rounded-lg mb-4">
+                        <img src="/images/work3.jpg" alt="The Journey" class="w-full h-96 object-cover transform group-hover:scale-105 transition duration-300">
+                        <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                            <a href="#" class="bg-accent text-black px-6 py-2 rounded-full font-semibold hover:bg-accent/90 transition">Watch Trailer</a>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Guest Star</h3>
+                    <p class="text-gray-400">The Journey (2023)</p>
+                    <p class="text-sm text-gray-500 mt-2">TV Series</p>
+                </div>
+
+                <!-- Work Item 4 -->
+                <div class="group">
+                    <div class="relative overflow-hidden rounded-lg mb-4">
+                        <img src="/images/work4.jpg" alt="Shadows of Time" class="w-full h-96 object-cover transform group-hover:scale-105 transition duration-300">
+                        <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                            <a href="#" class="bg-accent text-black px-6 py-2 rounded-full font-semibold hover:bg-accent/90 transition">Watch Trailer</a>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Lead Role</h3>
+                    <p class="text-gray-400">Shadows of Time (2023)</p>
+                    <p class="text-sm text-gray-500 mt-2">Theater Production</p>
+                </div>
+
+                <!-- Work Item 5 -->
+                <div class="group">
+                    <div class="relative overflow-hidden rounded-lg mb-4">
+                        <img src="/images/work5.jpg" alt="Brand Campaign" class="w-full h-96 object-cover transform group-hover:scale-105 transition duration-300">
+                        <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                            <a href="#" class="bg-accent text-black px-6 py-2 rounded-full font-semibold hover:bg-accent/90 transition">Watch Ad</a>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Brand Ambassador</h3>
+                    <p class="text-gray-400">Luxury Brand Campaign (2023)</p>
+                    <p class="text-sm text-gray-500 mt-2">Commercial</p>
+                </div>
+
+                <!-- Work Item 6 -->
+                <div class="group">
+                    <div class="relative overflow-hidden rounded-lg mb-4">
+                        <img src="/images/work6.jpg" alt="The Last Act" class="w-full h-96 object-cover transform group-hover:scale-105 transition duration-300">
+                        <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                            <a href="#" class="bg-accent text-black px-6 py-2 rounded-full font-semibold hover:bg-accent/90 transition">Watch Trailer</a>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Lead Role</h3>
+                    <p class="text-gray-400">The Last Act (2022)</p>
+                    <p class="text-sm text-gray-500 mt-2">Feature Film</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-12 px-4">
+        <div class="container mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 mb-4 md:mb-0">© 2025 Satya Pandey. All rights reserved.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-white hover:text-accent transition">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                    </a>
+                    <a href="#" class="text-white hover:text-accent transition">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                    </a>
+                    <a href="#" class="text-white hover:text-accent transition">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Category filter functionality
+        const filterButtons = document.querySelectorAll('button');
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Remove active state from all buttons
+                filterButtons.forEach(btn => {
+                    btn.classList.remove('bg-accent', 'text-black');
+                    btn.classList.add('bg-gray-800', 'text-white');
+                });
+                // Add active state to clicked button
+                button.classList.remove('bg-gray-800', 'text-white');
+                button.classList.add('bg-accent', 'text-black');
+            });
+        });
+    </script>
+</body>
+</html> 
